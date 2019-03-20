@@ -1,0 +1,81 @@
+$color-pr-1: #2E3645;
+$color-pr-2: #22385E;
+$color-pr-3: #607291;
+$color-pr-4: #345691;
+$color-pr-5: #93AEDE;
+$color-pr-6: #BEC6D33C;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  padding: 7.5px;
+  border-radius: 2.5px;
+  font-size: 12px;
+}
+
+.global-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 7.5vh min(1fr) 25vh;
+}
+
+.content {
+}
+
+.footer {
+  padding: 6% 5%;
+  background-color: $color-pr-1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 7.5px;
+  }
+
+  a {
+    color: $color-pr-3;
+    text-decoration: none;
+    font-size: 12px;
+  }
+}
+
+.navbar {
+  background-color: $color-pr-6;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  overflow: hidden;
+  a {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  router-link {
+    @extend a
+  }
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-row: 1fr 1fr 1fr;
+}
